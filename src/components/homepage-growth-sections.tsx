@@ -9,7 +9,6 @@ import type { DealerProfile, PropertyWithDealer } from "@/lib/queries";
 import { photo, photos } from "@/lib/images";
 import { siteImages } from "@/lib/site-images";
 const GREEN = "#1CA831";
-const GREEN = "#1CA831";
 
 const TYPES = [
   { title: "Houses", label: "Residential homes", image: photos.villas[0], href: "/properties?category=house", icon: IconBuilding },
