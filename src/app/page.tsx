@@ -88,14 +88,14 @@ export default async function HomePage() {
     <div className="home-page">
       <Hero />
 
-      {/* Dealer profiles and the site's own tools and guides follow the hero in one compact run. */}
+      {/* Mockup-matched homepage conversion flow stays above the original Explore section. */}
+      <HomepageGrowthSections recentProperties={discovery.items} dealers={showcaseDealers} />
+
+      {/* Existing homepage sections intentionally remain below; nothing was deleted. */}
       <DealersSlider dealers={showcaseDealers} />
       <ExploreMoreSection />
-
-      {/* Featured inventory leads the marketplace: the strongest listings first, then full discovery. */}
       <FeaturedProperties properties={featured.items} total={featured.total} />
       <RecentProperties />
-      <HomepageGrowthSections recentProperties={discovery.items} dealers={showcaseDealers} />
 
       {/* Property discovery */}
       <Section tone="mist" id="explore">
