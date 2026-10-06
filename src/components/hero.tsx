@@ -40,18 +40,18 @@ export function Hero() {
         <div className="hero-search-intro">
           <p className="hero-eyebrow"><span aria-hidden="true" />{t("Pakistan’s Premium Property Marketplace")}</p>
           <h1 id="hero-heading" className="hero-headline">
-            <span className="hero-headline-desktop">{t("Find Your Future.")}<br />{t("Invest With")} <span>{t("Clarity.")}</span></span>
-            <span className="hero-headline-mobile">{t("Find Property for")}<br />{t("Sale & Rent in Pakistan")}</span>
+            <span className="hero-headline-desktop">{t("Find Your Dream Property in Pakistan")}<br /><span>{t("Buy, rent or invest.")}</span></span>
+            <span className="hero-headline-mobile">{t("Find Your Dream Property")}<br />{t("in Pakistan")}</span>
           </h1>
           <p className="hero-description hero-description-desktop">
-            {t("Discover homes, apartments, plots, commercial properties and new projects across Lahore, Islamabad, Karachi and Pakistan’s major markets.")}
+            {t("Buy, rent or invest in residential, commercial and new properties across Pakistan. Find the right location, compare options and connect with confidence.")}
           </p>
           <p className="hero-description hero-description-mobile">{t("Buy, sell or rent property anywhere across Pakistan.")}</p>
           <div className="hero-actions hero-actions-desktop">
-            <Link href="#featured" className="btn btn-green">{t("Explore Properties")}<IconArrowRight className="h-4 w-4" /></Link>
+            <Link href="#featured" className="btn btn-green">{t("Find Properties")}<IconArrowRight className="h-4 w-4" /></Link>
             <Link href="/list-property" className="btn btn-ghost-light">{t("List Your Property")}</Link>
           </div>
-          <p className="hero-signature">{t("Better Homes. Bigger Dreams.")}</p>
+          <p className="hero-signature">{t("A smarter way to find, list and connect.")}</p>
           <a className="hero-credit" href={SITE.companyUrl} target="_blank" rel="noreferrer noopener">
             {t("Official platform by WordbitX Software Company")}
           </a>
