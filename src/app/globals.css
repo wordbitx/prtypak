@@ -1660,3 +1660,60 @@ html { scroll-padding-top: calc(var(--site-header-height) + 20px); }
   .property-search-new-badge { animation: none; }
   .explore-more-card { transition: none; }
 }
+
+
+/* Mockup-aligned homepage hero: editorial two-column layout with a dedicated seller card. */
+.home-page .hero-content-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(280px,340px);
+  gap:34px;
+  align-items:center;
+}
+.home-page .hero-search-intro{max-width:760px;margin-bottom:0}
+.home-page .hero-list-card{
+  position:relative;
+  align-self:end;
+  margin-top:34px;
+  padding:22px;
+  border:1px solid rgba(255,255,255,.42);
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(4,25,39,.88),rgba(5,38,48,.72));
+  box-shadow:0 24px 60px -28px rgba(0,0,0,.55);
+  backdrop-filter:blur(12px);
+  color:#fff;
+}
+.home-page .hero-list-card-icon{
+  display:grid;place-items:center;width:50px;height:50px;border-radius:14px;
+  background:#1CA831;box-shadow:0 10px 24px -12px rgba(28,168,49,.85);
+}
+.home-page .hero-list-card-icon span{font-size:1.45rem;line-height:1}
+.home-page .hero-list-card-kicker{
+  margin-top:16px;font-size:.62rem;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:rgba(255,255,255,.58)
+}
+.home-page .hero-list-card h2{
+  margin-top:6px;font-family:var(--font-sans);font-size:1.25rem;line-height:1.22;
+  font-weight:750;letter-spacing:-.025em;color:#fff
+}
+.home-page .hero-list-card p:not(.hero-list-card-kicker){
+  margin-top:10px;font-size:.78rem;line-height:1.65;color:rgba(255,255,255,.72)
+}
+.home-page .hero-list-card .btn{width:100%;margin-top:16px;min-height:46px}
+.home-page .hero-list-card-note{
+  display:flex;align-items:center;justify-content:center;gap:6px;margin-top:11px;
+  font-size:.65rem;color:rgba(255,255,255,.58)
+}
+.home-page .hero-list-card-note svg{color:#1CA831}
+.home-page .home-search-wrap{margin-top:26px}
+.home-page .property-search-panel{border-color:rgba(255,255,255,.5);box-shadow:0 22px 50px -26px rgba(0,0,0,.5)}
+@media (max-width:1023px){
+  .home-page .hero-content-grid{grid-template-columns:minmax(0,1fr) 300px;gap:22px}
+  .home-page .hero-headline{font-size:clamp(2.7rem,6.1vw,4.1rem)}
+}
+@media (max-width:767px){
+  .home-page .hero-content-grid{grid-template-columns:1fr;gap:18px}
+  .home-page .hero-list-card{margin-top:2px;padding:18px}
+  .home-page .hero-list-card h2{font-size:1.08rem}
+  .home-page .hero-list-card p:not(.hero-list-card-kicker){font-size:.74rem}
+  .home-page .home-search-wrap{margin-top:4px}
+}
