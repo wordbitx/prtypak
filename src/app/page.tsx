@@ -28,6 +28,7 @@ import {
 import { buildMetadata } from "@/lib/seo";
 import { HomeExploreProperties } from "@/components/home-explore-properties";
 import { RecentProperties } from "@/components/recent-properties";
+import { HomepageGrowthSections } from "@/components/homepage-growth-sections";
 
 export const metadata: Metadata = buildMetadata({
   title: "Properties Pak — Property for Sale & Rent in Pakistan | Pakistan Real Estate",
@@ -94,6 +95,7 @@ export default async function HomePage() {
       {/* Featured inventory leads the marketplace: the strongest listings first, then full discovery. */}
       <FeaturedProperties properties={featured.items} total={featured.total} />
       <RecentProperties />
+      <HomepageGrowthSections recentProperties={discovery.items} dealers={showcaseDealers} />
 
       {/* Property discovery */}
       <Section tone="mist" id="explore">
